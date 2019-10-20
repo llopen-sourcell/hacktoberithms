@@ -1,0 +1,15 @@
+def sum_all(num_lis):
+    sums=0
+    if num_lis[1] > num_lis[0]:
+        for i in range(num_lis[0],num_lis[1]+1):
+            sums+=i
+    else:
+        for i in range(num_lis[0],num_lis[1]-1,-1):
+            sums+=i
+
+    print sums
+
+num_lis=[4,1]
+sum_all(num_lis)
+
+    
